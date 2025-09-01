@@ -81,8 +81,8 @@ const ProgressBar3 = () => {
             <div className="mt-9">
         <h4 className=" pb-5 relative text-bold z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  text-sm  font-bold text-transparent text-left pl-7">Supabase</h4>
         <div className="bg-gray-300 relative h-4 w-[95%] mr-auto ml-auto rounded-2xl">
-          <div className="bg-blue-800 absolute top-0 left-0 flex h-full w-[40%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
-            40%
+          <div className="bg-blue-800 absolute top-0 left-0 flex h-full w-[80%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
+            80%
           </div>
         </div>
       </div>

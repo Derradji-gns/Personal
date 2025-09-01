@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/progress": "^2.2.21",
+    "@heroui/react": "^2.8.3",
     "@tabler/icons-react": "^3.34.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
