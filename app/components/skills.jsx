@@ -1,6 +1,4 @@
 "use client"
-import {Progress} from "@heroui/react";
-import Prog from "./prog";
 import ProgressBar3 from "./progress";
 
 function Skills() {
