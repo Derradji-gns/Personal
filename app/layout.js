@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "DERRADJI AMINE | Official Website",
+  title: "Derradji Amine Abdelbasset",
   description: "hello ! I am derradji amine abdelbasset, junior web developer, cloud service associate and a ICT student at ENSTTIC , based on Algeria",
   keywords: [
     "derradji amine abdelbasset",
@@ -21,7 +21,11 @@ export const metadata = {
     "igenergy club",
     "ensttic",
     "telecommunication"
-  ]
+  ], 
+  icons:{
+    icon : "/public/graphics/myLogo.jpg"
+
+  },
 };
 
 export default function RootLayout({ children }) {
