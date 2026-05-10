@@ -1,20 +1,18 @@
 
 
 import GridSmallBackgroundDemo from "./components/header";
-import Skills from "./components/skills";
 import SpotlightPreview from "./components/hiring";
 import StatefulButtonDemo from "./components/button";
 import Footer from "./components/footer";
-import Intro from "./components/intro";
 import FloatingNavDemo  from "./components/navbar";
 import Live from "./components/live";
+import SkillsLoop from "./components/skillsLoop";
 export default function Home() {
   return(
     <div className="bg-black">
       <FloatingNavDemo/>
       <GridSmallBackgroundDemo/>
-      <Intro/>
-      <Skills/>
+      <SkillsLoop/>
       <Live/>
       <SpotlightPreview/>
       <StatefulButtonDemo/>
