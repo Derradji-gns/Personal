@@ -4,6 +4,7 @@ import { GoContainer } from "react-icons/go";;
 import { MdOutlineWeb, MdDevices } from "react-icons/md";
 import { SiKubernetes } from "react-icons/si";
 import { PiDevToLogoFill } from "react-icons/pi";
+import BorderBeam from '../components/ui/task';
 
 export default function Tasks() {
     const Tasks = [
@@ -48,26 +49,24 @@ export default function Tasks() {
 
                     return (
 
-<div className="grid gap-2" key={index}>
-        <BorderGlow
-  edgeSensitivity={30}
-  glowColor="40 80 80"
-  backgroundColor="#120F17"
-  borderRadius={28}
-  glowRadius={40}
-  glowIntensity={1}
-  coneSpread={25}
-  animated={false}
-  colors={['#c084fc', '#f472b6', '#38bdf8']}
-  className='m-4'
->
-  <div style={{ padding: '2em' }}>
+<div className="grid  justify-center items-center w-[100%]" key={index}>
+        <BorderBeam
+        duration={6}
+        delay={3}
+        size={400}
+        borderWidth={2}
+        className="from-transparent via-blue-500 to-transparent mb-4"
+      >
+  <div className='p-5'>
     <div className="flex  justify-start gap-4 items-center mb-1">
     {task.src}
-    <h2 className='text-white mb-1 font-bold font-3xl'>{task.task}</h2></div>
+    <h2 className='text-white pb-1 font-bold font-3xl'>{task.task}</h2></div>
     <p className='text-neutral-400'>{task.Description}.</p>
   </div>
-</BorderGlow>
+
+</BorderBeam>
+
+
 
  </div>)
 
