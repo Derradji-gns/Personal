@@ -1,3 +1,4 @@
+"use client"
 import BorderGlow from '../components/ui/task';
 import { FaServer, FaCloudUploadAlt } from "react-icons/fa"
 import { GoContainer } from "react-icons/go";;
@@ -5,8 +6,14 @@ import { MdOutlineWeb, MdDevices } from "react-icons/md";
 import { SiKubernetes } from "react-icons/si";
 import { PiDevToLogoFill } from "react-icons/pi";
 import BorderBeam from '../components/ui/task';
-
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 export default function Tasks() {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
     const Tasks = [
         {
             "task" : "Build a Cloud Infrastructure",
@@ -50,24 +57,31 @@ export default function Tasks() {
                     return (
 
 <div className="grid  justify-center items-center w-[100%]" key={index}>
-        <BorderBeam
-        duration={6}
-        delay={3}
-        size={400}
-        borderWidth={2}
-        className="py-2 from-transparent via-blue-500 to-transparent mt-8 "
-      >
+    <div data-aos="zoom-in">
+        <BorderGlow
+  edgeSensitivity={30}
+  glowColor="40 80 80"
+  backgroundColor="#171717"
+  className='mt-5'
+  borderRadius={28}
+  glowRadius={40}
+  glowIntensity={1}
+  coneSpread={25}
+  animated={false}
+  colors={['#c084fc', '#f472b6', '#38bdf8']}
+
+>
   <div className='p-5'>
-    <div className="flex  justify-start gap-4 items-center mb-1">
+    <div className="flex  justify-start gap-4 items-center mb-1 ">
     {task.src}
     <h2 className='text-white pb-1 font-bold font-3xl'>{task.task}</h2></div>
     <p className='text-neutral-400'>{task.Description}.</p>
   </div>
 
-</BorderBeam>
+</BorderGlow>
 
 
-
+</div>
  </div>)
 
                 })}

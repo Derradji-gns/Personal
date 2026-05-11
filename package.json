@@ -15,6 +15,7 @@
     "@heroui/progress": "^2.2.21",
     "@heroui/react": "^2.8.3",
     "@tabler/icons-react": "^3.34.1",
+    "aos": "^3.0.0-beta.6",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
     "gh-pages": "^6.3.0",
