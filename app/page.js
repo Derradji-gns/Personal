@@ -9,7 +9,7 @@ import Tasks from "./components/task";
 import SkillsLoop from "./components/skillsLoop";
 export default function Home() {
   return(
-    <div className="bg-black">
+    <div className="bg-black overflow-x-hidden">
       <FloatingNavDemo/>
       <GridSmallBackgroundDemo/>
       <SkillsLoop/>
