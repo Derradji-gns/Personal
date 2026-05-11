@@ -49,7 +49,7 @@ export default function Tasks() {
     
     return (
         <div className="p-4">
-            <div className=" bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent  mb-10 ">What I Can Do ?</div>
+            <div className=" bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent  mb-11 ">What I Can Do ?</div>
             
 
                 { Tasks.map((task, index) => {

@@ -14,6 +14,7 @@ function GridSmallBackgroundDemo() {
       />
 
       {/* Radial gradient overlay - dark center glow */}
+    
       <div className="pointer-events-none absolute inset-0 bg-black/80 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
       {/* Name */}
