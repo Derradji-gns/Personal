@@ -23,7 +23,7 @@ const techLogos = [
 
 export default function SkillsLoop() {
   return (
-    <div className="  w-full h-[200px] ">
+    <div className="  w-full h-[200px] mb-15">
         <div className="bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text  text-4xl font-bold text-transparent  text-center mb-10">Materials</div>
     <div style={{ height: 'auto', position: 'relative', overflow: 'hidden'}}>
       

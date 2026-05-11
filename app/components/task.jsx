@@ -49,7 +49,7 @@ export default function Tasks() {
     
     return (
         <div className="p-4">
-            <div className="py-3 flex items-center bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 mb-10 ">What I Can Do ?</div>
+            <div className=" bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent  mb-10 ">What I Can Do ?</div>
             
 
                 { Tasks.map((task, index) => {
