@@ -55,7 +55,7 @@ export default function Tasks() {
         delay={3}
         size={400}
         borderWidth={2}
-        className="from-transparent via-blue-500 to-transparent mb-4"
+        className="py-2 from-transparent via-blue-500 to-transparent mt-8 "
       >
   <div className='p-5'>
     <div className="flex  justify-start gap-4 items-center mb-1">
