@@ -5,7 +5,7 @@ import SpotlightPreview from "./components/hiring";
 import StatefulButtonDemo from "./components/button";
 import Footer from "./components/footer";
 import FloatingNavDemo  from "./components/navbar";
-import Live from "./components/live";
+import Tasks from "./components/task";
 import SkillsLoop from "./components/skillsLoop";
 export default function Home() {
   return(
@@ -13,11 +13,10 @@ export default function Home() {
       <FloatingNavDemo/>
       <GridSmallBackgroundDemo/>
       <SkillsLoop/>
-      <Live/>
+      <Tasks/>
       <SpotlightPreview/>
       <StatefulButtonDemo/>
       <Footer/>
-
     </div>
   );
 }

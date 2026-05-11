@@ -23,14 +23,15 @@ const techLogos = [
 
 export default function SkillsLoop() {
   return (
-    <div className="container">
-        <div className="py-3 flex items-center bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 mb-10 ">Materials</div>
+    <div className="container overflow-x-hidden">
+        <div className="py-3 flex items-center bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 mb-10">Materials</div>
     <div style={{ height: 'auto', position: 'relative', overflow: 'hidden'}}>
-      {/* Basic horizontal loop */}
+      
+
       <LogoLoop
         logos={techLogos}
-        className="text-white bg-black"
-        speed={100}
+        className="text-neutral-400 bg-black"
+        speed={80}
         direction="left"
         logoHeight={60}
         gap={60}
