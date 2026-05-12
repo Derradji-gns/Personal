@@ -7,10 +7,11 @@ import Footer from "./components/footer";
 import FloatingNavDemo  from "./components/navbar";
 import Tasks from "./components/task";
 import SkillsLoop from "./components/skillsLoop";
+import Nav from "./components/nav";
 export default function Home() {
   return(
     <div className="bg-black overflow-x-hidden">
-      <FloatingNavDemo/>
+      <Nav/>
       <GridSmallBackgroundDemo/>
       <SkillsLoop/>
       <Tasks/>

@@ -17,27 +17,27 @@ export default function Tasks() {
     const Tasks = [
         {
             "task" : "Build a Cloud Infrastructure",
-            "Description" : "I can realise a Cloud Infrastructure using Huawei Cloud Platform or similar platform's providers",
+            "Description" : "I can design and implement cloud infrastructure using Huawei Cloud or other leading cloud service providers",
             "src" : <FaServer className='w-6 h-6 text-neutral-200 mb-1' />
         },
         {
             "task" : "Developp a Full Stack Platforms",
-            "Description" : "I can developp a full stack platform using MERN technologies",
+            "Description" : "I can develop full‑stack applications using MERN technologies (MongoDB, Express.js, React, and Node.js).",
             "src" : <MdOutlineWeb className='w-6 h-6 text-neutral-200 mb-1'/>
         },
         {
             "task" : "Build a responsive web design pages",
-            "Description" : " ensure the responsitivity of web design using modern design technologies like tailwind and animation tools",
+            "Description" : " I ensure responsive web design by leveraging modern frameworks such as Tailwind CSS and animation tools to deliver dynamic, user‑friendly interfaces",
             "src" : <MdDevices className='w-6 h-6 text-neutral-200 mb-1'/>
         },
         {
             "task" : "Build a Cloud Native apps",
-            "Description" : "I can build ready cloud apps using Docker and containerasation",
+            "Description" : "Build cloud‑ready apps with Docker and containerization, integrating PaaS solutions like BaaS.",
             "src" : <GoContainer className='w-6 h-6 text-neutral-200 mb-1'/>
         },
         {
             "task" : "Deal with Kubernetes environment",
-            "Description" : "I already passed a Kubernetes formation which makes me able to interacte with similar environments and deployments",
+            "Description" : "I passed Kubernetes training, enabling me to manage containerized environments and deployments.",
             "src" : <SiKubernetes className='w-6 h-6 text-neutral-200 mb-1'/>
         },
         {
