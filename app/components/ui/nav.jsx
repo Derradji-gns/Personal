@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 // use your own icon import if react-icons is not available
 import { GoArrowUpRight } from 'react-icons/go';
+import Image from 'next/image';
 
 const CardNav = ({
   logo,
@@ -134,13 +135,15 @@ const CardNav = ({
     if (el) cardsRef.current[i] = el;
   };
 
+  
+
   return (
     <div
       className={`card-nav-container absolute left-1/2 -translate-x-1/2 w-[90%]  max-w-[800px] z-[99] top-[1.2em] md:top-[2em] ${className}`}
     >
       <nav
         ref={navRef}
-        className={`card-nav ${isExpanded ? 'open' : ''} block h-[60px] bg-black w-[90%] ml-auto mr-auto p-0 z-1200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] relative overflow-hidden will-change-[height]`}
+        className={`card-nav ${isExpanded ? 'open' : ''} block h-[60px]  w-[90%] ml-auto mr-auto p-0 z-1200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] relative overflow-hidden will-change-[height]`}
         
       >
         <div className="card-nav-top text-white absolute inset-x-0 top-0 h-[60px] flex items-center justify-between p-2 pl-[1.1rem] z-[2]">
@@ -164,8 +167,8 @@ const CardNav = ({
             />
           </div>
 
-          <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
-            <img src={logo} alt={logoAlt} className="logo h-[28px]" />
+          <div className="logo-container  flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
+            <Image src={logo} width={120} height={28} alt={logoAlt} className="logo h-20 w-full" />
           </div>
 
           

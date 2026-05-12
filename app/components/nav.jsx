@@ -1,4 +1,4 @@
-import CardNav from './ui/nav'
+import CardNav from './ui/nav';
 const Nav = () => {
   const items = [
     {
@@ -33,8 +33,8 @@ const Nav = () => {
 
   return (
     <CardNav
-      logo={'./myLogo.jpg'}
-      className='z-1000 w-full'
+      logo={"/graphics/Copilot_20260512_193431.png"}
+      className='z-1000 w-full '
       logoAlt="Derradji"
       items={items}
       baseColor="#fff"
