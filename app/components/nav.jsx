@@ -33,7 +33,7 @@ const Nav = () => {
 
   return (
     <CardNav
-      logo={"/graphics/Copilot_20260512_193431.png"}
+      logo={"/graphics/Copilot_20260512_225824.png"}
       className='z-1200 w-full'
       logoAlt="Derradji"
       items={items}
