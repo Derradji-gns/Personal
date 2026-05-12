@@ -8,11 +8,11 @@ function Footer() {
           
         </div>
 
-        <p className="mt-4 max-w-xs text-gray-500">
+        <p className="mt-4 ml-auto mr-auto w-[80%] text-center text-gray-500">
           For inquires or Feedback , you can reach out the developer through the links provided below. Enjoy your experience!
         </p>
 
-        <ul className="mt-8 flex gap-6">
+        <ul className="mt-8 flex justify-center gap-6">
           <li>
             <a
               href="https://www.facebook.com/AbdelbassetDr?mibextid=JRoKGi"
@@ -114,30 +114,7 @@ function Footer() {
 
         
 
-        <div>
-          <p className="font-medium text-gray-500">Legal</p>
-
-          <ul className="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> Introduction</a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> Skills </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> Projects </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
-                helpfull links
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
     </div>
 </footer>
     );
