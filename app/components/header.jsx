@@ -25,7 +25,7 @@ function GridSmallBackgroundDemo() {
       <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-sm text-center w-[80%] mt-10 font-bold text-transparent">
         Front-end Web developer and ICT Student from Algeria, dedicated to building responsive and user-friendly web interfaces
       </p>
-      <ul className="mt-8 flex gap-6">
+      <ul className="mt-8 flex gap-6 z-1000">
           <li>
             <a
               href="https://www.facebook.com/AbdelbassetDr?mibextid=JRoKGi"
