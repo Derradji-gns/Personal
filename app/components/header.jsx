@@ -25,13 +25,13 @@ function GridSmallBackgroundDemo() {
       <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-sm text-center w-[80%] mt-10 font-bold text-transparent">
        Junior full stack developer & cloud computing associate, passionate about DevOps and software engineering. Skilled in building scalable web applications
       </p>
-      <ul className="mt-8 flex gap-6 z-1000">
+      <ul className="mt-8 flex gap-6 z-20">
           <li>
             <a
               href="https://www.facebook.com/AbdelbassetDr?mibextid=JRoKGi"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-neutral-700 transition hover:opacity-75"
             >
               <span className="sr-only">Facebook</span>
 
@@ -50,7 +50,7 @@ function GridSmallBackgroundDemo() {
               href="https://www.instagram.com/aminederr99?igsh=MWdzbXNqNTdtMDgxbg=="
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-neutral-700 transition hover:opacity-75"
             >
               <span className="sr-only">Instagram</span>
 
@@ -69,7 +69,7 @@ function GridSmallBackgroundDemo() {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-neutral-700 transition hover:opacity-75"
             >
               <span className="sr-only">Twitter</span>
 
@@ -86,7 +86,7 @@ function GridSmallBackgroundDemo() {
               href="https://github.com/Derradji-gns"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-neutral-700 transition hover:opacity-75"
             >
               <span className="sr-only">GitHub</span>
 
@@ -105,7 +105,7 @@ function GridSmallBackgroundDemo() {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-neutral-700 transition hover:opacity-75"
             >
               <span className="sr-only">Dribbble</span>
 

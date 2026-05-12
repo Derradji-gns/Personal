@@ -3,16 +3,16 @@ const Nav = () => {
   const items = [
     {
       label: "About",
-      bgColor: "#1B1722",
+      bgColor: "#171717",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" },
-        { label: "Careers", ariaLabel: "About Careers" }
+        { label: "Who I am ?", ariaLabel: "About Company" },
+        { label: "Certifications", ariaLabel: "About Careers" }
       ]
     },
     {
       label: "Projects", 
-      bgColor: "#2F293A",
+      bgColor: "#171717",
       textColor: "#fff",
       links: [
         { label: "Featured", ariaLabel: "Featured Projects" },
@@ -21,11 +21,11 @@ const Nav = () => {
     },
     {
       label: "Contact",
-      bgColor: "#2F293A", 
+      bgColor: "#171717", 
       textColor: "#fff",
       links: [
         { label: "Email", ariaLabel: "Email us" },
-        { label: "Twitter", ariaLabel: "Twitter" },
+        { label: "Resume", ariaLabel: "Twitter" },
         { label: "LinkedIn", ariaLabel: "LinkedIn" }
       ]
     }
@@ -34,7 +34,7 @@ const Nav = () => {
   return (
     <CardNav
       logo={"/graphics/Copilot_20260512_193431.png"}
-      className='z-1000 w-full '
+      className='z-1200 w-full'
       logoAlt="Derradji"
       items={items}
       baseColor="#fff"
