@@ -1,6 +1,7 @@
 import { cn } from "./ui/lib/utils";
 import React from "react";
 
+
 function GridSmallBackgroundDemo() {
   return (
     <div className="relative flex flex-col h-[40rem]   w-full items-center justify-center bg-black dark:bg-black" >
@@ -25,6 +26,7 @@ function GridSmallBackgroundDemo() {
       <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-sm text-center w-[80%] mt-10 font-bold text-transparent">
        Junior full stack developer & cloud computing associate, passionate about DevOps and software engineering. Skilled in building scalable web applications
       </p>
+      
       <ul className="mt-8 flex gap-6 z-20">
           <li>
             <a

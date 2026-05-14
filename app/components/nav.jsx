@@ -6,7 +6,7 @@ const Nav = () => {
       bgColor: "#171717",
       textColor: "#fff",
       links: [
-        { label: "Who I am ?", ariaLabel: "About Company" },
+        { label: "Who I am ?", ariaLabel: "About Company", href : "/define" },
         { label: "Certifications", ariaLabel: "About Careers" }
       ]
     },
