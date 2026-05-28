@@ -23,7 +23,7 @@ export const metadata = {
     "telecommunication"
   ], 
   icons:{
-    icon : "/public/graphics/myLogo.jpg"
+    icon : "/graphics/main"
 
   },
 };

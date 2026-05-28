@@ -10,7 +10,7 @@ function Footer() {
 
         <div className="flex justify-center items-center gap-3 ">
           <div className="flex justify-center items-center  h-full w-[50%]">
-            <Image src="/graphics/Copilot_20260512_225824.png" width={120} height={120} />
+            <Image src="/graphics/main.png" width={120} height={120} alt='hello' />
           </div>
           
 
