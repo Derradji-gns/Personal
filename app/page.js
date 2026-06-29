@@ -4,7 +4,6 @@ import GridSmallBackgroundDemo from "./components/header";
 import SpotlightPreview from "./components/hiring";
 import StatefulButtonDemo from "./components/button";
 import Footer from "./components/footer";
-import FloatingNavDemo  from "./components/navbar";
 import Tasks from "./components/task";
 import SkillsLoop from "./components/skillsLoop";
 import Nav from "./components/nav";
