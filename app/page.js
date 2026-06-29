@@ -1,8 +1,4 @@
-
-
 import GridSmallBackgroundDemo from "./components/header";
-import SpotlightPreview from "./components/hiring";
-import StatefulButtonDemo from "./components/button";
 import PortfolioFooter from "./components/footer";
 import Tasks from "./components/task";
 import SkillsLoop from "./components/skillsLoop";
