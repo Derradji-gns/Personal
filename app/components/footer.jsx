@@ -68,12 +68,10 @@ export default function PortfolioFooter() {
               Open to work
             </p>
             <h2 className="text-3xl text-center font-bold text-white mt-5 leading-tight">
-              Let's build something <br className="hidden sm:block" />
-              <span className="text-neutral-400 ">worth shipping.</span>
+              Ready to bring your <span className="text-neutral-400 ">idea</span><br></br> to <span className="text-neutral-400 ">life</span> ?
             </h2>
             <p className="text-sm text-center mt-5 text-zinc-500 ">
-              Full-stack developer focused on clean interfaces and thoughtful
-              user experiences.
+              Available for freelance and part-time opportunities. <br></br> Let's discuss your next project !
             </p>
           </div>
 
