@@ -58,7 +58,7 @@ export default function PortfolioFooter() {
   };
 
   return (
-    <footer className=" mt-6 text-zinc-400 bg-zinc-950 border-zinc-800">
+    <footer className=" mt-6 text-zinc-400 bg-black border-zinc-800">
       {/* Top CTA band */}
       <div className="max-w-5xl mx-auto px-6 pt-16 pb-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">

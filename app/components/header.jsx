@@ -4,7 +4,7 @@ import React from "react";
 
 function GridSmallBackgroundDemo() {
   return (
-    <div className="relative flex flex-col h-[40rem]   w-full items-center justify-center bg-black dark:bg-black" >
+    <div className="relative flex flex-col h-[40rem]   w-full items-center justify-center  bg-black" >
       {/* Grid background - darker lines */}
       <div
         className={cn(
