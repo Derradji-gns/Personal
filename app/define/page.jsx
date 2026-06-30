@@ -27,9 +27,8 @@ export default function page() {
 
         {/* Bio */}
         <p className="mt-5 text-base text-white leading-7 max-w-xl">
-          My name is Derradji Amine Abdelbasset, algerian ICT student interested in networking and software engineering, I am a junior Full stack web developer and I use JS technologies to build performed platforms and websites with friendly and modern UIs for different scenarios.
-        </p>
-
+         I am Derradji Amine, a junior software engineer and full stack web developer passionate about building scalable, modern applications. My journey combines hands-on coding with a strong foundation in computer science, allowing me to bridge theory and practice in every project I take on.
+         </p>
         {/* CTAs */}
 
          <div className="mt-8 flex flex-wrap gap-3">
@@ -50,23 +49,27 @@ export default function page() {
         
       </section>
 
-      <div className="section">
+      <div className="section pt-10">
         
         {/* Bio */}
-        <h1 className="mt-10 text-2xl font-medium text-white ">Development</h1>
+        <h1 className="mt-10 mb-8 text-2xl font-medium text-white ">🌐 Full Stack Development</h1>
         <p className="mt-3 text-base text-white leading-7 max-w-xl">
-          I can develop web solutions matchs the requirments of modern development using Docker, Kubernetes and micro-services architect. <br />
-          I am able to realise a full cloud infrastructure using poviders's  for sevral cases like web hosting and basic scenarios
-        </p>
-
+          With experience in frontend and backend technologies, I design and develop complete web platforms. My expertise spans the MERN stack (MongoDB, Express.js, React, Node.js), enabling me to deliver responsive user interfaces and efficient server-side solutions that work seamlessly together.
+          </p>
         {/* CTAs */}
 
         {/* Bio */}
+        <div className="cont2 pt-9">
+        <h1 className="mt-10 mb-8 text-2xl font-medium text-white ">☁️ Cloud & DevOps</h1>
         <p className="mt-3 text-base text-white leading-7 max-w-xl">
-           I am a Third year student at <strong> Higher National School of Telecommunications and ICT -ENSTTIC- </strong> and Huwaei Certified Network Associate looking for strenght my knowledge in networking and data communication
-        </p>
-
-        {/* CTAs */}
+         Beyond web development, I have solid knowledge in cloud services, Docker, and Kubernetes. I enjoy designing infrastructure that is reliable, containerized, and easy to scale. This DevOps mindset helps me to work in production environement and collaborate wwith DevOps engineers.
+        </p>{/* CTAs */}</div>
+      </div>
+      <div className="cont2 pt-9">
+        <h1 className="mt-10 mb-8 text-2xl font-medium text-white ">🎓 Education</h1>
+        <p className="mt-3 text-base text-white leading-7 max-w-xl">
+         I am currently a third year student at ENSTTIC (École Nationale Supérieure des Télécommunications et des Technologies de l’Information et de la Communication), where I continue to strengthen my technical foundation and explore advanced topics in software engineering, networking, and cloud computing.
+      </p>
       </div>
 
      

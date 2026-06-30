@@ -1,15 +1,15 @@
 import GridSmallBackgroundDemo from "./components/header";
-import PortfolioFooter from "./components/footer";
 import Tasks from "./components/task";
 import SkillsLoop from "./components/skillsLoop";
+import LastHero from "./components/last-hero"
 
 export default function Home() {
   return(
-    <div className="bg-black overflow-x-hidden">
+    <div className="bg-black overflow-x-hidden h-auto">
       <GridSmallBackgroundDemo/>
       <SkillsLoop/>
       <Tasks/>
-      <PortfolioFooter/>
+      <LastHero/>
     </div>
   );
 }
