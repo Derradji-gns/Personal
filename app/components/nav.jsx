@@ -16,7 +16,7 @@ const Nav = () => {
       bgColor: "#171717",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects", href : "/certifications" },
+        { label: "Featured", ariaLabel: "Featured Projects", href : "/projects" },
         { label: "Case Studies", ariaLabel: "Project Case Studies", href : "/certifications" }
       ]
     },

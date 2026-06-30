@@ -8,38 +8,38 @@ const documents = [
     category: "Networking",
 
     title: "Design and implementation of Cloud Provider Networks - Using SDN & NFV",
-    date: "Mar 2024",
+    date: "Jan 2026",
     pages: 11,
     tag: "Cloud & Networks",
-    fileUrl: "/docs/system-design.pdf",
+    fileUrl: "/docs/SDN.pdf",
   },
   {
     id: 2,
     category: "Web",
     title: "Firebase — Beginner Guide ",
-    date: "Jan 2024",
+    date: "Jan 2025",
     pages: 13,
     tag: "Web",
-    fileUrl: "/docs/api-reference.pdf",
+    fileUrl: "/docs/Firebase.pdf",
   },
   {
     id: 3,
     category: "Web",
     title: "DNS Service — several web hosting cases",
-    date: "Nov 2023",
+    date: "Dec 2025",
     pages: 9,
     tag: "Web & Network",
-    fileUrl: "/docs/design-system.pdf",
+    fileUrl: "/docs/DNS_Search.pdf",
   },
     {
     id: 4,
     category: "Cloud",
 
     title: "Servers & Cloud Concepts",
-    date: "Mar 2024",
+    date: "Oct 2025",
     pages: 11,
     tag: "Cloud & Networks",
-    fileUrl: "/docs/system-design.pdf",
+    fileUrl: "/docs/Cloud_infrastructure.pdf",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const documents = [
     date: "Fev 2026",
     pages: 14,
     tag: "DevOps",
-    fileUrl: "/docs/cicd-pipeline.pdf",
+    fileUrl: "/docs/Docker_guide.pdf",
   },
 ];
 
@@ -148,11 +148,11 @@ export default function DocumentationsPage() {
     <main className="max-w-4xl bg-black mx-auto px-6 py-16 sm:py-24">
 
       {/* ── Hero ── */}
-      <section className="mb-10">
+      <section className="mb-10 mt-[60px]">
         <div className="flex items-center gap-2 mb-5">
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
           <span className="text-xs uppercase tracking-widest text-white">
-            Resources
+           Developer Resources
           </span>
         </div>
 
@@ -170,10 +170,10 @@ export default function DocumentationsPage() {
             <button
               key={f}
               onClick={() => setActiveFilter(f)}
-              className={`text-xs px-4 py-1.5 rounded-full border transition-colors duration-150 ${
+              className={`text-xs px-4 py-1.5 rounded-full  border transition-colors duration-150 ${
                 activeFilter === f
-                  ? "bg-indigo-50 border-indigo-300 text-indigo-600"
-                  : "border-zinc-200 text-zinc-500 hover:border-zinc-400 hover:text-zinc-700"
+                  ? "bg-zinc-500 border-white text-white"
+                  : "border-white text-white hover:border-zinc-400 "
               }`}
             >
               {f}

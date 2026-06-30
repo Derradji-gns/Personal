@@ -1,90 +1,11 @@
-const projects = [
-  {
-    id: 1,
-    icon: "🧩",
-    iconBg: "bg-indigo-50",
-    title: "DesignKit UI",
-    description:
-      "Open-source component library built with React and Tailwind. 40+ components, dark mode, and full a11y coverage.",
-    tags: ["React", "Tailwind"],
-    link: "#",
-  },
-  {
-    id: 2,
-    icon: "📊",
-    iconBg: "bg-green-50",
-    title: "Trackly",
-    description:
-      "Habit tracking app with streak analytics. Built in 48h during a solo hackathon. 1.2k active users.",
-    tags: ["Next.js", "Prisma"],
-    link: "#",
-  },
-  {
-    id: 3,
-    icon: "🤖",
-    iconBg: "bg-purple-50",
-    title: "DocChat",
-    description:
-      "Upload any PDF and chat with it using the Claude API. Streams responses in real time with source highlighting.",
-    tags: ["AI", "TypeScript"],
-    link: "#",
-  },
-  {
-    id: 4,
-    icon: "🛒",
-    iconBg: "bg-orange-50",
-    title: "Storefronts",
-    description:
-      "Headless e-commerce starter on top of Shopify. Optimized for Core Web Vitals — 98 Lighthouse score.",
-    tags: ["Shopify", "Remix"],
-    link: "#",
-  },
-];
 
-function ProjectCard({ icon, iconBg, title, description, tags, link }) {
-  return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex flex-col gap-3 bg-white border border-zinc-200 rounded-xl p-5 hover:border-zinc-400 transition-colors duration-150"
-    >
-      <div
-        className={`w-9 h-9 rounded-lg flex items-center justify-center text-lg ${iconBg}`}
-      >
-        {icon}
-      </div>
-
-      <div className="flex-1">
-        <h3 className="text-sm font-medium text-zinc-900 mb-1">{title}</h3>
-        <p className="text-sm text-zinc-500 leading-relaxed">{description}</p>
-      </div>
-
-      <div className="flex items-center justify-between pt-3 border-t border-zinc-100">
-        <div className="flex gap-1.5 flex-wrap">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs px-2 py-0.5 rounded bg-zinc-100 text-zinc-600"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-        <span className="text-xs text-indigo-500 group-hover:underline">
-          View ↗
-        </span>
-      </div>
-    </a>
-  );
-}
 
 export default function page() {
   return (
-    <main className="max-w-4xl mx-auto px-6 bg-black py-16 sm:py-24">
+    <main className="max-w-4xl mx-auto  px-6 bg-black py-16 sm:py-24">
 
       {/* ── Hero ── */}
-      <section className="pb-14 border-b border-zinc-200">
+      <section className="pb-14 border-b mt-[60px] border-zinc-200">
         {/* Status badge */}
         <div className="flex items-center gap-2 mb-6">
           <span className="w-2 h-2 rounded-full bg-green-500" />
@@ -111,7 +32,28 @@ export default function page() {
 
         {/* CTAs */}
 
+         <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href="/projects"
+            className="px-5 py-2.5 rounded-lg bg-zinc-500 hover:bg-zinc-600 text-white text-sm font-medium transition-colors duration-150"
+          >
+            View my work
+          </a>
+          <a
+            href="mailto:derradjiamineabdelbaset@gmail.com"
+            className="px-5 py-2.5 rounded-lg border border-zinc-300 bg-zinc-100 hover:bg-zinc-50 text-zinc-800 text-sm font-medium transition-colors duration-150"
+          >
+            Get in touch
+          </a>
+        </div>
+
+        
+      </section>
+
+      <div className="section">
+        
         {/* Bio */}
+        <h1 className="mt-10 text-2xl font-medium text-white ">Development</h1>
         <p className="mt-3 text-base text-white leading-7 max-w-xl">
           I can develop web solutions matchs the requirments of modern development using Docker, Kubernetes and micro-services architect. <br />
           I am able to realise a full cloud infrastructure using poviders's  for sevral cases like web hosting and basic scenarios
@@ -125,26 +67,9 @@ export default function page() {
         </p>
 
         {/* CTAs */}
-        
-      </section>
+      </div>
 
-      {/* ── Projects ── */}
-      <section id="projects" className="pt-12">
-        <div className="flex items-baseline justify-between mb-7">
-          <h2 className=" font-medium text-white">
-            Main Projects
-          </h2>
-          <span className="text-xs text-zinc-400">
-            {projects.length} projects
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {projects.map((p) => (
-            <ProjectCard key={p.id} {...p} />
-          ))}
-        </div>
-      </section>
+     
 
     </main>
   );

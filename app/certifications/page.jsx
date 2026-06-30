@@ -69,7 +69,7 @@ const FILTERS = ["All", "Cloud", "DevOps", "Development", "Networking"];
 
 function StatusBadge({ status }) {
   return status === "valid" ? (
-    <span className="text-xs px-2.5 py-1 rounded-full bg-green-50 text-green-700 border border-green-200">
+    <span className="text-xs px-2.5 py-1 rounded-full bg-green-100 text-green-700 border border-green-300">
       Valid
     </span>
   ) : (
@@ -81,7 +81,7 @@ function StatusBadge({ status }) {
 
 function CertCard({ logo, issuer, name, issuedDate, expiryDate, noExpiry, status, category, verifyUrl }) {
   return (
-    <div className="group flex flex-col gap-3.5 bg-white border border-zinc-200 rounded-xl p-5 hover:border-zinc-400 transition-colors duration-150">
+    <div className="group flex flex-col gap-3.5 bg-gray-100 border border-zinc-200 rounded-xl p-5 hover:border-zinc-400 transition-colors duration-150">
       {/* Top row */}
       <div className="flex items-start justify-between gap-2">
         <div className="w-10 h-10 rounded-lg border border-zinc-200 bg-zinc-50 flex items-center justify-center text-xl flex-shrink-0">
@@ -92,19 +92,19 @@ function CertCard({ logo, issuer, name, issuedDate, expiryDate, noExpiry, status
 
       {/* Body */}
       <div>
-        <p className="text-xs text-zinc-400 uppercase tracking-wider mb-1">{issuer}</p>
+        <p className="text-xs text-zinc-600 uppercase tracking-wider mb-1">{issuer}</p>
         <p className="text-sm font-medium text-zinc-900 leading-snug">{name}</p>
       </div>
 
       {/* Meta */}
       <div className="flex flex-col gap-1.5">
-        <div className="flex items-center gap-1.5 text-xs text-zinc-400">
+        <div className="flex items-center gap-1.5 text-xs text-zinc-500">
           <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
             <rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>
           </svg>
           Issued {issuedDate}
         </div>
-        <div className="flex items-center gap-1.5 text-xs text-zinc-400">
+        <div className="flex items-center gap-1.5 text-xs text-zinc-500">
           {noExpiry ? (
             <>
               <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -124,7 +124,7 @@ function CertCard({ logo, issuer, name, issuedDate, expiryDate, noExpiry, status
       </div>
 
       {/* Footer */}
-      <div className="pt-3 border-t border-zinc-100 flex items-center justify-between">
+      <div className="pt-3 border-t border-zinc-600 flex items-center justify-between">
         <span className="text-xs px-2 py-0.5 rounded bg-zinc-100 text-zinc-500">
           {category}
         </span>
@@ -156,16 +156,16 @@ export default function CertificationsPage() {
     <main className="max-w-4xl mx-auto px-6 py-16 bg-black sm:py-24">
 
       {/* ── Hero ── */}
-      <section className="mb-12">
+      <section className="mb-12 mt-[60px]">
         <div className="flex items-center gap-2 mb-5">
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
           <span className="text-xs uppercase tracking-widest text-white">
-            Credentials
+            Developer Credentials
           </span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-none">
-          My certifications
+          My Certifications
         </h1>
         <p className="mt-7 text-base text-white leading-7 max-w-lg">
           A collection of certifications and courses I've completed — covering
@@ -178,10 +178,10 @@ export default function CertificationsPage() {
             <button
               key={f}
               onClick={() => setActiveFilter(f)}
-              className={`text-xs px-4 py-1.5 rounded-full bg-zinc-100 text-black border transition-colors duration-150 ${
+              className={`text-xs px-4 py-1.5 rounded-full   border transition-colors duration-150 ${
                 activeFilter === f
-                  ? "bg-indigo-50 border-indigo-300 text-indigo-600"
-                  : "border-zinc-200 text-zinc-500 hover:border-zinc-400 hover:text-zinc-700"
+                  ? "bg-zinc-500 border-white text-white"
+                  : "border-white text-white hover:border-zinc-400 "
               }`}
             >
               {f}
@@ -195,10 +195,10 @@ export default function CertificationsPage() {
       {/* ── Grid ── */}
       <section>
         <div className="flex items-baseline justify-between mb-5">
-          <span className="text-sm font-medium text-zinc-900">
+          <span className="text-sm font-medium text-white">
             {activeFilter === "All" ? "All certificates" : activeFilter}
           </span>
-          <span className="text-xs text-zinc-400">
+          <span className="text-xs text-zinc-200">
             {filtered.length} credential{filtered.length !== 1 ? "s" : ""}
           </span>
         </div>
