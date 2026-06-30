@@ -13,7 +13,7 @@ const certifications = [
     noExpiry: false,
     status: "valid",
     category: "Cloud",
-    verifyUrl: "#",
+    verifyUrl: "https://www.linkedin.com/posts/derradji-amine-abdelbasset_huawei-algeria-telecom-activity-7390039386777755648-D89e?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFDvswcBtDrjN8p0WkoTSGRablNWMrTaS-Y&utm_campaign=copy_link",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const certifications = [
     noExpiry: true,
     status: "valid",
     category: "Networking",
-    verifyUrl: "#",
+    verifyUrl: "https://www.linkedin.com/posts/derradji-amine-abdelbasset_certif-activity-7415336283729993728-bEWO?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFDvswcBtDrjN8p0WkoTSGRablNWMrTaS-Y&utm_campaign=copy_link",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const certifications = [
     noExpiry: true,
     status: "valid",
     category: "DevOps",
-    verifyUrl: "#",
+    verifyUrl: "https://www.credly.com/badges/3711cd89-76bc-4a28-8d06-11947424da06/public_url",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const certifications = [
     noExpiry: false,
     status: "valid",
     category: "Cloud",
-    verifyUrl: "#",
+    verifyUrl: "https://www.linkedin.com/posts/derradji-amine-abdelbasset_huawei-networking-cloud-activity-7419678789082767360-h5wT?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFDvswcBtDrjN8p0WkoTSGRablNWMrTaS-Y&utm_campaign=copy_link",
   },
   {
     id: 5,

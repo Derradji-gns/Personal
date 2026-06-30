@@ -120,7 +120,7 @@ export default function PortfolioPage() {
           </button>
 
           <a
-            href="mailto:hello@alexmercer.dev"
+            href="mailto:derradjiamineabdelbaset@gmail.com"
             className="px-5 py-2.5 rounded-lg border border-zinc-300 bg-zinc-100 hover:bg-white text-zinc-800 text-sm font-medium transition-colors duration-150"
           >
             Hire Me ?
