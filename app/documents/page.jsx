@@ -150,7 +150,7 @@ export default function DocumentationsPage() {
       {/* ── Hero ── */}
       <section className="mb-10 mt-[60px]">
         <div className="flex items-center gap-2 mb-5">
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
           <span className="text-xs uppercase tracking-widest text-white">
            Developer Resources
           </span>
@@ -172,7 +172,7 @@ export default function DocumentationsPage() {
               onClick={() => setActiveFilter(f)}
               className={`text-xs px-4 py-1.5 rounded-full  border transition-colors duration-150 ${
                 activeFilter === f
-                  ? "bg-zinc-500 border-white text-white"
+                  ? "bg-blue-400 border-white text-white"
                   : "border-white text-white hover:border-zinc-400 "
               }`}
             >
@@ -186,7 +186,7 @@ export default function DocumentationsPage() {
 
       {/* ── Section header ── */}
       <div className="flex items-baseline justify-between mb-5">
-        <span className="text-sm font-medium text-zinc-900">
+        <span className="text-sm font-medium text-white">
           {activeFilter === "All" ? "All documents" : activeFilter}
         </span>
         <span className="text-xs text-zinc-400">

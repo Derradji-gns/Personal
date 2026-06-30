@@ -178,9 +178,9 @@ export default function CertificationsPage() {
             <button
               key={f}
               onClick={() => setActiveFilter(f)}
-              className={`text-xs px-4 py-1.5 rounded-full   border transition-colors duration-150 ${
+              className={`text-xs px-4 py-1.5 rounded-full border  transition-colors duration-150 ${
                 activeFilter === f
-                  ? "bg-zinc-500 border-white text-white"
+                  ? "bg-indigo-500 text-white"
                   : "border-white text-white hover:border-zinc-400 "
               }`}
             >

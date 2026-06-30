@@ -169,7 +169,7 @@ const CardNav = ({
           </div>
 
           <div className="logo-container  flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
-            <Image src={logo} width={120} height={28} alt={logoAlt} className="logo h-[60px] w-[60px]" />
+            <Image src={logo} width={120} height={28} alt={logoAlt} className="logo  h-[60px] w-[60px] " />
           </div>
 
           

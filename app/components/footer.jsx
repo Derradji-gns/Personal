@@ -90,7 +90,7 @@ export default function PortfolioFooter() {
         </div>
 
         {/* Copyright */}
-        <p className="mt-8 text-xs text-center text-zinc-700">
+        <p className="mt-8 mb-2 text-xs text-center text-zinc-700">
           © {new Date().getFullYear()} Derradji Amine. v1.7.0
         </p>
       

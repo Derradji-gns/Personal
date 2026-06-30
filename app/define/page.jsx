@@ -2,7 +2,7 @@
 
 export default function page() {
   return (
-    <main className="max-w-4xl mx-auto  px-6 bg-black py-16 sm:py-24">
+    <main className="max-w-4xl mx-auto px-6  bg-black py-16 sm:py-24">
 
       {/* ── Hero ── */}
       <section className="pb-14 border-b mt-[60px] border-zinc-200">
@@ -17,7 +17,7 @@ export default function page() {
         {/* Name */}
         <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-none text-white">
           Hi, I'm{" "}
-          <span className="text-zinc-500">Derradji Abdelbasset</span>
+          <span className="text-green-500">Derradji Abdelbasset</span>
         </h1>
 
         {/* Role */}
@@ -34,7 +34,7 @@ export default function page() {
          <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="/projects"
-            className="px-5 py-2.5 rounded-lg bg-zinc-500 hover:bg-zinc-600 text-white text-sm font-medium transition-colors duration-150"
+            className="px-5 py-2.5 rounded-lg bg-green-500 hover:bg-zinc-600 text-white text-sm font-medium transition-colors duration-150"
           >
             View my work
           </a>
