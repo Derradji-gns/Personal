@@ -7,7 +7,8 @@ const Nav = () => {
       textColor: "#fff",
       links: [
         { label: "Who I am ?", ariaLabel: "About Company", href : "/define" },
-        { label: "Certifications", ariaLabel: "About Careers" }
+        { label: "Certifications", ariaLabel: "About Careers", href : "/certifications" },
+        { label: "My Documentations", ariaLabel: "Developer Documentations", href : "/documents" }
       ]
     },
     {
@@ -15,8 +16,8 @@ const Nav = () => {
       bgColor: "#171717",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" }
+        { label: "Featured", ariaLabel: "Featured Projects", href : "/certifications" },
+        { label: "Case Studies", ariaLabel: "Project Case Studies", href : "/certifications" }
       ]
     },
     {
@@ -24,9 +25,9 @@ const Nav = () => {
       bgColor: "#171717", 
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" },
-        { label: "Resume", ariaLabel: "Twitter" },
-        { label: "LinkedIn", ariaLabel: "LinkedIn" }
+        { label: "Email", ariaLabel: "Email us", href : "/certifications" },
+        { label: "Resume", ariaLabel: "Twitter", href : "/certifications" },
+        { label: "LinkedIn", ariaLabel: "LinkedIn", href : "/certifications" }
       ]
     }
   ];

@@ -195,11 +195,12 @@ const CardNav = ({
                 {item.links?.map((lnk, i) => (
                   
                   <Link
-                    key={`${lnk.label}-${i}`}
-                    className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-opacity duration-300 hover:opacity-75 text-[15px] md:text-[16px]"
-                    href="/define"
-                    aria-label={lnk.ariaLabel}
-                  >
+  key={`${lnk.label}-${i}`}
+  className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-opacity duration-300 hover:opacity-75 text-[15px] md:text-[16px]"
+  href={lnk.href} 
+    // ← was hardcoded to "/define"
+  aria-label={lnk.ariaLabel}
+>
                     
                     <GoArrowUpRight className="nav-card-link-icon shrink-0" aria-hidden="true" />
                     {lnk.label}
