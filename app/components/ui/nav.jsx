@@ -192,7 +192,7 @@ const CardNav = ({
         </div>
 
         <div
-          className={`card-nav-content z-1000 absolute left-0 right-0 top-[60px] bg-black bottom-0 p-2 flex flex-col items-stretch gap-2 justify-start  ${
+          className={`card-nav-content  absolute left-0 right-0 top-[60px] bg-black bottom-0 p-2 flex flex-col items-stretch gap-2 justify-start  ${
             isExpanded ? 'visible pointer-events-auto' : 'invisible pointer-events-none'
           } md:flex-row md:items-end md:gap-[12px]`}
           aria-hidden={!isExpanded}

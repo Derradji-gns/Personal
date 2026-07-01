@@ -5,7 +5,7 @@ export default function page() {
     <main className="max-w-4xl mx-auto px-6  bg-black py-16 sm:py-24">
 
       {/* ── Hero ── */}
-      <section className="pb-14 border-b mt-[60px] border-zinc-200">
+      <section className="  mt-[60px] ">
         {/* Status badge */}
         <div className="flex items-center gap-2 mb-6">
           <span className="w-2 h-2 rounded-full bg-green-500" />
@@ -52,22 +52,25 @@ export default function page() {
       <div className="section pt-10">
         
         {/* Bio */}
-        <h1 className="mt-10 mb-8 text-2xl font-medium text-white ">🌐 Full Stack Development</h1>
-        <p className="mt-3 text-base text-white leading-7 max-w-xl">
+        <h1 className="mt-10 mb-4 text-2xl font-medium text-white ">Full Stack Development</h1>
+         <div className="border-t border-zinc-200 mb-7" />
+        <p className="text-base text-white leading-7 max-w-xl">
           With experience in frontend and backend technologies, I design and develop complete web platforms. My expertise spans the MERN stack (MongoDB, Express.js, React, Node.js), enabling me to deliver responsive user interfaces and efficient server-side solutions that work seamlessly together.
           </p>
         {/* CTAs */}
 
         {/* Bio */}
         <div className="cont2 pt-9">
-        <h1 className="mt-10 mb-8 text-2xl font-medium text-white ">☁️ Cloud & DevOps</h1>
-        <p className="mt-3 text-base text-white leading-7 max-w-xl">
+        <h1 className="mt-10 mb-4 text-2xl font-medium text-white ">Cloud & DevOps</h1>
+        <div className="border-t border-zinc-200 mb-7" />
+        <p className=" text-base text-white leading-7 max-w-xl">
          Beyond web development, I have solid knowledge in cloud services, Docker, and Kubernetes. I enjoy designing infrastructure that is reliable, containerized, and easy to scale. This DevOps mindset helps me to work in production environement and collaborate wwith DevOps engineers.
         </p>{/* CTAs */}</div>
       </div>
       <div className="cont2 pt-9">
-        <h1 className="mt-10 mb-8 text-2xl font-medium text-white ">🎓 Education</h1>
-        <p className="mt-3 text-base text-white leading-7 max-w-xl">
+        <h1 className="mt-10 mb-4 text-2xl font-medium text-white ">Education</h1>
+        <div className="border-t border-zinc-200 mb-7" />
+        <p className="text-base text-white leading-7 max-w-xl">
          I am currently a third year student at ENSTTIC (École Nationale Supérieure des Télécommunications et des Technologies de l’Information et de la Communication), where I continue to strengthen my technical foundation and explore advanced topics in software engineering, networking, and cloud computing.
       </p>
       </div>
