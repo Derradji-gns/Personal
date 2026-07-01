@@ -1,11 +1,12 @@
 "use client"
 
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 // use your own icon import if react-icons is not available
 import { GoArrowUpRight } from 'react-icons/go';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const CardNav = ({
   logo,
@@ -23,6 +24,7 @@ const CardNav = ({
   const navRef = useRef(null);
   const cardsRef = useRef([]);
   const tlRef = useRef(null);
+  const pathname = usePathname();
 
   const calculateHeight = () => {
     const navEl = navRef.current;
@@ -118,6 +120,22 @@ const CardNav = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isExpanded]);
 
+  const closeMenu = () => {
+    const tl = tlRef.current;
+    if (!tl) return;
+    setIsHamburgerOpen(false);
+    tl.eventCallback('onReverseComplete', () => setIsExpanded(false));
+    tl.reverse();
+  };
+
+  // Auto-close whenever the route actually changes.
+  useEffect(() => {
+    if (isExpanded) {
+      closeMenu();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
+
   const toggleMenu = () => {
     const tl = tlRef.current;
     if (!tl) return;
@@ -126,9 +144,7 @@ const CardNav = ({
       setIsExpanded(true);
       tl.play(0);
     } else {
-      setIsHamburgerOpen(false);
-      tl.eventCallback('onReverseComplete', () => setIsExpanded(false));
-      tl.reverse();
+      closeMenu();
     }
   };
 
@@ -195,13 +211,12 @@ const CardNav = ({
                 {item.links?.map((lnk, i) => (
                   
                   <Link
-  key={`${lnk.label}-${i}`}
-  className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-opacity duration-300 hover:opacity-75 text-[15px] md:text-[16px]"
-  href={lnk.href} 
-    // ← was hardcoded to "/define"
-  aria-label={lnk.ariaLabel}
->
-                    
+                    key={`${lnk.label}-${i}`}
+                    className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-opacity duration-300 hover:opacity-75 text-[15px] md:text-[16px]"
+                    href={lnk.href}
+                    aria-label={lnk.ariaLabel}
+                    onClick={closeMenu}
+                  >
                     <GoArrowUpRight className="nav-card-link-icon shrink-0" aria-hidden="true" />
                     {lnk.label}
                   </Link>
