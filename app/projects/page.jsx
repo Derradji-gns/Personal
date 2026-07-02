@@ -31,7 +31,7 @@ const projects = [
     description:
       "A clean, focused entry point designed to capture attention and drive user action",
     tags: ["Shopify", "Remix"],
-    link: "landing-page44.vercel.app",
+    link: "https://landing-page44.vercel.app",
   },
   {
     id: 4,
