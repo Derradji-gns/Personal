@@ -26,6 +26,11 @@ const CardNav = ({
   const tlRef = useRef(null);
   const pathname = usePathname();
 
+  // Stable signature so the timeline is only rebuilt when the *content* of
+  // items actually changes, not just when the parent passes a new array
+  // reference (e.g. an inline literal re-created on every render/route change).
+  const itemsSignature = JSON.stringify(items);
+
   const calculateHeight = () => {
     const navEl = navRef.current;
     if (!navEl) return 260;
@@ -90,7 +95,7 @@ const CardNav = ({
       tlRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ease, items]);
+  }, [ease, itemsSignature]);
 
   useLayoutEffect(() => {
     const handleResize = () => {
@@ -128,10 +133,36 @@ const CardNav = ({
     tl.reverse();
   };
 
+  // Force an immediate, non-animated close. Used on route changes, where we
+  // don't want to depend on a GSAP timeline that may have just been torn
+  // down/recreated by the items/ease effect above — animating a reverse on a
+  // freshly-created (unplayed) timeline is a no-op and leaves isExpanded out
+  // of sync with what's actually on screen.
+  const forceCloseMenu = () => {
+    const tl = tlRef.current;
+    if (tl) {
+      tl.eventCallback('onReverseComplete', null);
+      tl.progress(0).pause();
+    }
+    if (navRef.current) {
+      gsap.set(navRef.current, { height: 60 });
+    }
+    if (cardsRef.current.length) {
+      gsap.set(cardsRef.current, { y: 50, opacity: 0 });
+    }
+    setIsHamburgerOpen(false);
+    setIsExpanded(false);
+  };
+
   // Auto-close whenever the route actually changes.
+  const isFirstRender = useRef(true);
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
     if (isExpanded) {
-      closeMenu();
+      forceCloseMenu();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
@@ -152,7 +183,9 @@ const CardNav = ({
     if (el) cardsRef.current[i] = el;
   };
 
-  
+  // Clear stale refs before this render repopulates them, so leftover nodes
+  // from a previous items array (different length) can't leak into gsap.set.
+  cardsRef.current = [];
 
   return (
     <div
