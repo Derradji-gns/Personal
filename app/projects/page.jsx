@@ -1,12 +1,35 @@
 "use client"
 import { useRef } from "react";
 import ServicesPanel from "../components/servicePanel";
+import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  FileText,
+  Waypoints,
+  Rocket,
+  BookOpen,
+  Bot,
+  ArrowUpRight,
+} from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    icon: "🔀",
+    icon: FileText,
+    iconBg: "bg-orange-50",
+    iconColor: "text-orange-600",
+    title: "Admin Dashboard - ERP",
+    description:
+      "CoreLink is an ERP solution designed to streamline business operations by organizing tasks such as authentication, data management, reporting, and collaboration into a scalable backend architecture.",
+    tags: ["authentication", "Dashboard", "Integrated portal"],
+    link: "https:/core-link-nu.vercel.app",
+  },
+  {
+    id: 2,
+    icon: Waypoints,
     iconBg: "bg-indigo-50",
+    iconColor: "text-indigo-600",
     title: "SDN-WEB Sumilation Platform",
     description:
       "A web-based SDN platform that simulates shortest path routing using advanced algorithms and complex logic to demonstrate intelligent network control.",
@@ -14,19 +37,10 @@ const projects = [
     link: "http://sdn-web.vercel.app",
   },
   {
-    id: 2,
-    icon: "🛒",
-    iconBg: "bg-orange-50",
-    title: "Storefronts",
-    description:
-      "Headless e-commerce starter on top of Shopify. Optimized for Core Web Vitals — 98 Lighthouse score.",
-    tags: ["Shopify", "Wordpress", "custom"],
-    link: "#",
-  },
-  {
     id: 3,
-    icon: "🚀",
-    iconBg: "bg-orange-100",
+    icon: Rocket,
+    iconBg: "bg-amber-50",
+    iconColor: "text-amber-600",
     title: "Landing Page",
     description:
       "A clean, focused entry point designed to capture attention and drive user action",
@@ -35,8 +49,9 @@ const projects = [
   },
   {
     id: 4,
-    icon: "📖",
-    iconBg: "bg-zinc-200",
+    icon: BookOpen,
+    iconBg: "bg-emerald-50",
+    iconColor: "text-emerald-600",
     title: "Educational Platform",
     description:
       "A platform delivering IT courses across diverse domains to make learning simple and accessible.",
@@ -45,8 +60,9 @@ const projects = [
   },
   {
     id: 5,
-    icon: "🤖",
+    icon: Bot,
     iconBg: "bg-purple-50",
+    iconColor: "text-purple-600",
     title: "Scientific Club Website",
     description:
       "Collaborative website for a scientific club, designed to share research, publish articles, and organize events that connect students and professionals across multiple scientific domains",
@@ -55,32 +71,47 @@ const projects = [
   },
 ];
 
-function ProjectCard({ icon, iconBg, title, description, tags, link }) {
+function ProjectCard({ icon: Icon, iconBg, iconColor, title, description, tags, link }) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex flex-col gap-3 bg-white border border-zinc-200 rounded-xl p-5 hover:border-zinc-400 transition-colors duration-150"
-    >
-      <div className={`w-9 h-9 rounded-lg flex items-center justify-center text-lg ${iconBg}`}>
-        {icon}
-      </div>
-      <div className="flex-1">
-        <h3 className="text-sm font-medium text-zinc-900 mb-1">{title}</h3>
-        <p className="text-sm text-zinc-500 leading-relaxed">{description}</p>
-      </div>
-      <div className="flex items-center justify-between pt-3 border-t border-zinc-100">
+    <Card className="group relative flex flex-col justify-between gap-4 rounded-xl border-zinc-200 hover:border-zinc-300 hover:shadow-md transition-all duration-200">
+      <CardHeader className="gap-3">
+        <div
+          className={`w-10 h-10 rounded-lg flex items-center justify-center ${iconBg} ${iconColor} ring-1 ring-inset ring-black/5`}
+        >
+          <Icon className="w-[18px] h-[18px]" strokeWidth={1.75} />
+        </div>
+        <div>
+          <CardTitle className="text-sm font-medium text-zinc-900">{title}</CardTitle>
+          <CardDescription className="text-sm text-zinc-500 leading-relaxed mt-1">
+            {description}
+          </CardDescription>
+        </div>
+      </CardHeader>
+
+      <CardFooter className="flex items-center justify-between pt-3 border-t border-zinc-100">
         <div className="flex gap-1.5 flex-wrap">
           {tags.map((tag) => (
-            <span key={tag} className="text-xs px-2 py-0.5 rounded bg-zinc-100 text-zinc-600">
+            <Badge
+              key={tag}
+              variant="secondary"
+              className="text-xs px-2 py-0.5 rounded bg-zinc-100 text-zinc-600 font-normal hover:bg-zinc-100"
+            >
               {tag}
-            </span>
+            </Badge>
           ))}
         </div>
-        <span className="text-xs text-indigo-500 group-hover:underline">View ↗</span>
-      </div>
-    </a>
+        <Button
+          asChild
+          size="icon"
+          variant="outline"
+          className="w-8 h-8 rounded-full border-zinc-200 text-zinc-500 group-hover:border-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-200"
+        >
+          <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`Open ${title}`}>
+            <ArrowUpRight className="w-3.5 h-3.5" strokeWidth={2} />
+          </a>
+        </Button>
+      </CardFooter>
+    </Card>
   );
 }
 
@@ -89,7 +120,6 @@ export default function PortfolioPage() {
 
   return (
     <main className="max-w-4xl bg-black mx-auto px-6 py-16 sm:py-24">
-
       {/* ── Hero ── */}
       <section className="mb-12 mt-[60px]">
         <div className="flex items-center gap-2 mb-5">
@@ -111,20 +141,20 @@ export default function PortfolioPage() {
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          {/* ✅ Wired to ServicesPanel via ref */}
-          <button
+          <Button
             onClick={() => panelRef.current?.toggle()}
-            className="px-5 py-2.5 rounded-lg bg-red-600 hover:bg-red-700 text-white text-sm font-medium transition-colors duration-150"
+            className="px-5 py-2.5 rounded-lg bg-red-600 hover:bg-red-700 text-white text-sm font-medium transition-colors duration-150 h-auto"
           >
             Explore Services
-          </button>
+          </Button>
 
-          <a
-            href="mailto:derradjiamineabdelbaset@gmail.com"
-            className="px-5 py-2.5 rounded-lg border border-zinc-300 bg-zinc-100 hover:bg-white text-zinc-800 text-sm font-medium transition-colors duration-150"
+          <Button
+            asChild
+            variant="outline"
+            className="px-5 py-2.5 rounded-lg border border-zinc-300 bg-zinc-100 hover:bg-white text-zinc-800 text-sm font-medium transition-colors duration-150 h-auto"
           >
-            Hire Me ?
-          </a>
+            <a href="mailto:derradjiamineabdelbaset@gmail.com">Hire Me ?</a>
+          </Button>
         </div>
       </section>
 
@@ -147,7 +177,6 @@ export default function PortfolioPage() {
         ref={panelRef}
         onServiceClick={(s) => console.log("Selected service:", s.name)}
       />
-
     </main>
   );
 }

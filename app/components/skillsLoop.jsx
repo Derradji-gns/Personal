@@ -1,6 +1,22 @@
 "use client"
 import LogoLoop from './ui/loop';
-import { SiReact, SiNextdotjs, SiNodedotjs,SiHuawei,SiGit,SiGithub, SiSupabase, SiFirebase,  SiKubernetes, SiExpress,SiMongodb, SiTailwindcss, SiDocker } from 'react-icons/si';
+import { 
+  SiReact, 
+  SiNextdotjs, 
+  SiNodedotjs,
+  SiHuawei,
+  SiGit,
+  SiGithub, 
+  SiSupabase, 
+  SiFirebase,  
+  SiKubernetes, 
+  SiExpress,
+  SiMongodb, 
+  SiTailwindcss, 
+  SiDocker,
+  SiTypescript,
+  SiRedux
+} from 'react-icons/si';
 
 
 const techLogos = [
@@ -9,6 +25,8 @@ const techLogos = [
   { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
   { node: <SiNodedotjs/>, title: "Nodejs", href: "https://www.nodejs.org" },
   { node: <SiExpress />, title: "Express", href: "https://expressjs.com" },
+  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+{ node: <SiRedux />, title: "Redux", href: "https://redux.js.org" },
   { node: <SiMongodb />, title: "MongoDB", href: "https://www.mongodb.com" },
   { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
   { node: <SiGithub />, title: "Github", href: "https://github.com" },
