@@ -19,3 +19,6 @@ export async function GET(request) {
 
   return NextResponse.json({ ip, country, city });
 }
+
+
+/////// just txt
