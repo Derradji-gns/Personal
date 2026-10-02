@@ -27,7 +27,7 @@ const Nav = () => {
       textColor: "#fff",
       links: [
         { label: "Email", ariaLabel: "Email us", href : "mailto:derradjiamineabdelbaset@gmail.com" },
-        { label: "Resume", ariaLabel: "Twitter", href : "/docs/resume.pdf" },
+        { label: "Resume", ariaLabel: "Twitter", href : "/docs/cv_eng.docx" },
         { label: "LinkedIn", ariaLabel: "LinkedIn", href : "https://www.linkedin.com/in/derradji-amine-abdelbasset?utm_source=share_via&utm_content=profile&utm_medium=member_android" }
       ]
     }

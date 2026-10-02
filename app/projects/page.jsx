@@ -23,7 +23,7 @@ const projects = [
     description:
       "CoreLink is an ERP solution designed to streamline business operations by organizing tasks such as authentication, data management, reporting, and collaboration into a scalable backend architecture.",
     tags: ["authentication", "Dashboard", "Integrated portal"],
-    link: "https:/core-link-nu.vercel.app",
+    link: "https://core-link-nu.vercel.app",
   },
   {
     id: 2,
